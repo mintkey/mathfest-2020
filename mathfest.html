@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MathFest 2020</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/myStyle.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#register">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#program">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#directions">Getting There</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead" style="background-image: url('img/header.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Fordham MathFest 2020</h1>
+              <h3><b>Fordham College Lincoln Center</b></h3>
+              <h4><b>Saturday, March 28th</b></h4>
+              <span class="subheading">Putting Mathematics to Work!</span>
+              <br>
+              <p id="timer"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="speakers" class="pt-0 px-0 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 style="text-align:center">Speakers</h2>
+            <p class="lead"></p>
+          </div>
+        </div>
+      </div>
+       <!-- Speakers Row -->
+      <div class="container">
+        <div class="row flex-column flex-md-row">
+          <div class="col-md-6 mx-auto">
+            <br>
+            <img class="rounded-circle img-fluid d-block mx-auto" src="img/pegden.jpg" alt="">
+            <br>
+            <h3>Wesley Pegden
+            <br>
+              <small>Professor at Carnegie Mellon University</small>
+            </h3>
+            <p><!--description--></p>
+          </div>
+          <div class="col-md-6 mx-auto">
+            <br>
+            <img class="rounded-circle img-fluid d-block mx-auto" src="img/veomett.jpg" alt="">
+            <br>
+            <h3>Ellen Veomett
+              <br>
+              <small>Professor at St. Mary's College</small>
+            </h3>
+            <p><!--description--></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutAndSignUp" class="bg-light py-5">
+      <div class="container">
+        <div class="row flex-column flex-md-row">
+          <div class="col-md-6 mx-auto px-3" id="about">
+            <h2 style="text-align:center">About MathFest</h2>
+                <!-- the icon as a time element -->
+
+           <br>
+           <p class="calendar">28<em>March</em></p>
+
+          </div>
+          <div class="col-md-6 mx-auto px-3" id="register">
+            <h2 style="text-align:center">Register</h2>
+            <form method="post" action="https://formspree.io/cbreiner@fordham.edu">
+              <div class="form-group">
+                <label for="nameFirst">First Name</label>
+                <input type="text" class="form-control" name="nameFirst" placeholder="Enter first name" required>
+              </div>
+              <div class="form-group">
+                <label for="nameLast">Last Name</label>
+                <input type="text" class="form-control" name="nameLast" placeholder="Enter last name" required>
+              </div>
+              <div class="form-group">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" class="form-control" name="emailAddress"placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="school">School</label>
+                <input type="text" class="form-control" name="school"placeholder="Enter school">
+              </div>
+              <div class="form-group">
+                <label for="major">Major</label>
+                <input type="text" class="form-control" name="major" placeholder="Enter major">
+              </div>
+              <div class="form-group">
+                <label for="gradYear">Expected Graduation Year</label>
+                <select class="form-control" name="gradYear">
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option>Graduate</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="gradYear">Food Preference</label>
+                <select class="form-control" name="foodPref">
+                  <option>Vegetarian</option>
+                  <option>Vegan</option>
+                  <option>Neither</option>
+                </select>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" name="confirmation">
+                <label class="form-check-label" for="confirmation">I plan to attend Fordham MathFest 2020 on March 28</label>
+              </div>
+              <br>
+              <button type="submit" name="action" value="submit" class="btn btn-success">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Schedule</h2>
+            <p>TBD</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="directions" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Getting There</h2>
+
+           	<p>The main entrance to Fordham University is located at the southeast corner of Columbus Avenue at 60th
+			Street (113 West 60th Street, New York, NY 10023). The A, B, C, D and 1 subway trains all
+			stop at 59th Street/Columbus Circle. The campus is located one block west.</p>
+
+			<p>Talks will be located at <b>Fordham Law School, Room 3-04</b>:
+			<ul>
+				<p>From Columbus Circle, head to Fordham University. Walk two blocks up from 60th St and make a left. Enter the law school building at 150 West 62nd Street.
+          Take the elevator up to the 3rd floor - on the glass side of the building, walk left and down to room 3-04 (note that there are two entrances to each room).</p>
+			</ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Questions?</h2>
+            <p class="lead">Please contact Christine Breiner at cbreiner@fordham.edu for more information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="containe text-center">
+        <img src="img/nsf-logo.png">
+        <p class="m-0 text-center text-white">This event is supported by NSF grant DMS-1750254</p>
+        <p class="m-0 text-center text-white">Partial support was also provided by Fordham College at Rose Hill and Fordham College at Lincoln Center.</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+    <script src="js/timer.js"></script>
+    <script src="js/calendar.js"></script>
+  </body>
+</html>
