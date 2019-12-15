@@ -71,14 +71,14 @@ header.masthead .site-heading .subheading {
 
 header.masthead .post-heading h1 {
   font-size: 35px;
-  
+
 }
 
 header.masthead .post-heading .meta,
 header.masthead .post-heading .subheading {
   line-height: 1.1;
   display: block;
-  
+
 }
 
 header.masthead .post-heading .subheading {
@@ -91,7 +91,7 @@ header.masthead .post-heading .subheading {
 header.masthead .post-heading .meta {
   font-size: 20px;
   font-weight: 300;
-  
+
   font-style: italic;
   font-family: 'Lora', 'Times New Roman', serif;
 }

@@ -9,27 +9,29 @@ require 'PHPMailer/src/SMTP.php';
 if (($_SERVER['REQUEST_METHOD'] == 'POST') && (!empty($_POST['action']))){
   if (isset($_POST['nameFirst'])) { $firstName = $_POST['nameFirst']; }
 	if (isset($_POST['nameLast'])) { $lastName = $_POST['nameLast']; }
+  if (isset($_POST['emailAddress'])) { $emailAddress = $_POST['emailAddress']; }
 	if (isset($_POST['school'])) { $school = $_POST['school']; }
 	if (isset($_POST['major'])) { $major = $_POST['major']; }
 	if (isset($_POST['gradYear'])) { $gradYear = $_POST['gradYear']; }
-	if (isset($_POST['emailAddress'])) { $emailAddress = $_POST['emailAddress']; }
+  if (isset($_POST['foodPref'])) { $emailAddress = $_POST['foodPref']; }
 	if (isset($_POST['confirmation'])) { $confirmation = 'attendance confirmed'; }
 	else { $confirmation = 'attendance NOT confirmed'; }
 
 	$formdata = [
     'first name' => $firstName,
     'last name' => $lastName,
+    'email address' => $emailAddress,
     'school' => $school,
     'major' => $major,
     'grad year' => $gradYear,
-    'email address' => $emailAddress,
+    'food preference' => $foodPref,
     'confirmation status' => $confirmation,
   ];
 
 $emailTo = $emailAddress;
 $emailToName = $firstName;
 $emailFrom = 'cbreiner@fordham.edu';
-$emailFromName = 'Fordham MathFest 2019';
+$emailFromName = 'Fordham MathFest 2020';
 
 $mail = new PHPMailer;
 //$mail->isSMTP();
@@ -42,7 +44,7 @@ $mail->Username = 'cbreiner@fordham.edu';
 $mail->Password = 'TYPE PASSWORD HERE';
 $mail->setFrom($emailFrom, $emailFromName);
 $mail->addAddress($emailTo, $emailToName);
-$mail->Subject = "Thank you, $firstName for signing up for MathFest 2019!";
+$mail->Subject = "Thank you, $firstName for signing up for MathFest 2020!";
 $mail->Body = "Testing 123";
 
 $mail->send();
