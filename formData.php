@@ -1,4 +1,4 @@
-<?php 
+<?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -15,7 +15,7 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && (!empty($_POST['action']))){
 	if (isset($_POST['emailAddress'])) { $emailAddress = $_POST['emailAddress']; }
 	if (isset($_POST['confirmation'])) { $confirmation = 'attendance confirmed'; }
 	else { $confirmation = 'attendance NOT confirmed'; }
-	
+
 	$formdata = [
     'first name' => $firstName,
     'last name' => $lastName,
@@ -25,14 +25,14 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && (!empty($_POST['action']))){
     'email address' => $emailAddress,
     'confirmation status' => $confirmation,
   ];
-  
+
 $emailTo = $emailAddress;
 $emailToName = $firstName;
 $emailFrom = 'cbreiner@fordham.edu';
 $emailFromName = 'Fordham MathFest 2019';
 
 $mail = new PHPMailer;
-//$mail->isSMTP(); 
+//$mail->isSMTP();
 $mail->SMTPDebug = 2; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
 $mail->Host = "smtp.gmail.com"; // use $mail->Host = gethostbyname('smtp.gmail.com'); // if your network does not support SMTP over IPv6
 $mail->Port = 465; // TLS only
@@ -46,14 +46,14 @@ $mail->Subject = "Thank you, $firstName for signing up for MathFest 2019!";
 $mail->Body = "Testing 123";
 
 $mail->send();
-/**
+/*
 if(!$mail->send()){
     echo "Mailer Error: " . $mail->ErrorInfo;
 }else{
     echo "Message sent!";
 } */
 
-/**
+/*
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
     $headers .= "From: cwestby1@gmail.com" . "\r\n" .
