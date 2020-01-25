@@ -44,10 +44,12 @@ $mail->Username = 'cbreiner@fordham.edu';
 $mail->Password = 'TYPE PASSWORD HERE';
 $mail->setFrom($emailFrom, $emailFromName);
 $mail->addAddress($emailTo, $emailToName);
-$mail->Subject = "Thank you, $firstName for signing up for MathFest 2020!";
-$mail->Body = "Testing 123";
+$mail->Subject = "You've successfully registered for MathFest 2020!";
+$mail->Body = "Testing 123"; // CHANGE //
 
 $mail->send();
+
+// ??? //
 /*
 if(!$mail->send()){
     echo "Mailer Error: " . $mail->ErrorInfo;
