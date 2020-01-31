@@ -2,22 +2,22 @@ body {
   font-family: 'Futura', sans-serif;
 }
 
-#mosaic {
-  margin-top: -120px;
-}
-
-#text-heading {
-  margin-top: 100px;
+#masthead {
+  margin-top: -100px;
   color: white;
 }
 
+#text-heading {
+  margin-top: 150px;
+}
+
 #title {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
 }
 
 #subtitle {
-  margin-top: -20px;
-  font-size: 3rem;
+  margin-top: -15px;
+  font-size: 2.6rem;
 }
 
 /* Centered text to overlay US mosaic */
@@ -25,6 +25,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-right: -50%;
   transform: translate(-50%, -50%);
 }
 
@@ -35,45 +36,31 @@ body {
 
 #red-line {
   height: 40px;
+  float: right;
 }
 
 #blue-line {
   height: 40px;
+  float: left;
 }
 
+#schedule-times {
+  margin-top: 50px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+
 /* Media Queries */
-@media screen and (min-width: 318px) and (max-width: 373px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-  }
 
-  #mosaic {
-    margin-top: -100px;
-  }
-
-  #text-heading {
-    margin-top: 130px;
-    margin-bottom: -180px;
+/* Shared attributes from 320px to 767px */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #masthead {
     color: #212529;
-  }
-
-  #title {
-    font-size: 1.85rem;
-  }
-
-  #subtitle {
-    margin-top: 0;
-    font-size: 1.8rem;
   }
 
   .text-overlay {
     position: relative;
-    display: flex;
-    text-align: center;
   }
 
   .profile {
@@ -84,79 +71,63 @@ body {
   #red-line {
     height: 20px;
   }
-  
+
   #blue-line {
     height: 20px;
     overflow: hidden;
   }
+
+  #schedule-times {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-@media screen and (min-width: 374px) and (max-width: 413px) {
+/* 
+  ##Device = Most mobile devices in portrait
+  ##Screen = Between 320px to 479px
+*/
+@media screen and (min-width: 320px) and (max-width: 479px) {
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
-  
+
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
-  #mosaic {
-    margin-top: -100px;
-  }
-
+  /* Add space in between mosaic and Speakers section */
   #text-heading {
     margin-top: 150px;
     margin-bottom: -160px;
-    color: #212529;
   }
 
   #title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   #subtitle {
-    margin-top: 0;
-    font-size: 1.95rem;
-  }
-
-  .text-overlay {
-    position: relative;
-    display: flex;
-    text-align: center;
-  }
-
-  .profile {
-    width: 180px;
-    height: 180px;
-  }
-
-  #red-line {
-    height: 20px;
-  }
-  
-  #blue-line {
-    height: 20px;
-    overflow: hidden;
+    font-size: 1.6rem;
   }
 }
 
-@media screen and (min-width: 414px) and (max-width: 767px) {
+/* 
+  ##Device = Low resolution tablets, mobiles in landscape
+  ##Screen = Between 480px to 767px
+*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
   h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
-  
+
   h3 {
     font-size: 2rem;
   }
 
-  #mosaic {
-    margin-top: -100px;
-  }
-
+  /* Add space in between mosaic and Speakers section */
   #text-heading {
     margin-top: 170px;
-    margin-bottom: -160px;
-    color: #212529;
+    margin-bottom: -140px;
   }
 
   #title {
@@ -164,49 +135,100 @@ body {
   }
 
   #subtitle {
-    margin-top: 0;
     font-size: 2.2rem;
-  }
-
-  .text-overlay {
-    position: relative;
-    display: flex;
-    text-align: center;
-  }
-
-  .profile {
-    width: 180px;
-    height: 180px;
-  }
-
-  #red-line {
-    height: 20px;
-  }
-  
-  #blue-line {
-    height: 20px;
-    overflow: hidden;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+/* 
+  ##Device = Tablets, iPads in portrait
+  ##Screen = Between 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
   h2 {
-    margin-top: -8px;
+    font-size: 2.2rem;
   }
 
-  h4 {
-    font-size: 1.2rem;
-  }
-
-  #mosaic {
-    margin-top: -80px;
+  h3 {
+    font-size: 2.1rem;
   }
 
   #text-heading {
-    margin-top: 20px;
+    margin-top: -130px;
   }
 
   #title {
-    margin-top: -10px;
+    font-size: 2.5rem;
+  }
+
+  #subtitle {
+    font-size: 2.3rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, iPads in landscape
+  ##Screen = Between 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  #text-heading {
+    margin-top: 0;
+  }
+
+  #title {
+    font-size: 2.5rem;
+  }
+
+  #subtitle {
+    font-size: 2.3rem;
+  }
+}
+
+/* 
+  ##Device = Laptops, desktops
+  ##Screen = Between 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  #title {
+    font-size: 2.9rem;
+  }
+
+  #subtitle {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 1281px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  #title {
+    font-size: 2.8rem;
+  }
+
+  #subtitle {
+    font-size: 2.6rem;
   }
 }
