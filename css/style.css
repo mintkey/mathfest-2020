@@ -3,12 +3,9 @@ body {
 }
 
 #masthead {
+  position: relative;
   margin-top: -100px;
   color: white;
-}
-
-#text-heading {
-  margin-top: 150px;
 }
 
 #title {
@@ -16,7 +13,7 @@ body {
 }
 
 #subtitle {
-  margin-top: -15px;
+  margin-top: -10px;
   font-size: 2.6rem;
 }
 
@@ -25,6 +22,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 3;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
@@ -61,6 +59,8 @@ body {
 
   .text-overlay {
     position: relative;
+    margin-top: 150px;
+    margin-bottom: -120px;
   }
 
   .profile {
@@ -89,25 +89,19 @@ body {
 */
 @media screen and (min-width: 320px) and (max-width: 479px) {
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   h3 {
-    font-size: 1.4rem;
-  }
-
-  /* Add space in between mosaic and Speakers section */
-  #text-heading {
-    margin-top: 150px;
-    margin-bottom: -160px;
+    font-size: 1.9rem;
   }
 
   #title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   #subtitle {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -117,25 +111,19 @@ body {
 */
 @media screen and (min-width: 480px) and (max-width: 767px) {
   h2 {
-    font-size: 2.1rem;
+    font-size: 1.6rem;
   }
 
   h3 {
-    font-size: 2rem;
-  }
-
-  /* Add space in between mosaic and Speakers section */
-  #text-heading {
-    margin-top: 170px;
-    margin-bottom: -140px;
+    font-size: 1.5rem;
   }
 
   #title {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 
   #subtitle {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -143,18 +131,9 @@ body {
   ##Device = Tablets, iPads in portrait
   ##Screen = Between 768px to 1024px
 */
-
 @media (min-width: 768px) and (max-width: 1024px) {
-  h2 {
-    font-size: 2.2rem;
-  }
-
   h3 {
-    font-size: 2.1rem;
-  }
-
-  #text-heading {
-    margin-top: -130px;
+    font-size: 1.6rem;
   }
 
   #title {
@@ -171,16 +150,8 @@ body {
   ##Screen = Between 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  h2 {
-    font-size: 1.7rem;
-  }
-
   h3 {
     font-size: 1.6rem;
-  }
-
-  #text-heading {
-    margin-top: 0;
   }
 
   #title {
@@ -196,14 +167,9 @@ body {
   ##Device = Laptops, desktops
   ##Screen = Between 1025px to 1280px
 */
-
 @media (min-width: 1025px) and (max-width: 1280px) {
-  h2 {
-    font-size: 2.5rem;
-  }
-
   h3 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   #title {
@@ -216,12 +182,8 @@ body {
 }
 
 @media (min-width: 1281px) {
-  h2 {
-    font-size: 2.5rem;
-  }
-
   h3 {
-    font-size: 2.4rem;
+    font-size: 1.9rem;
   }
 
   #title {
