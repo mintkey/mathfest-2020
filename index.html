@@ -21,6 +21,10 @@
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+  <!-- SMTP.js -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="js/index.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -145,14 +149,14 @@
     <div class="container">
       <div class="row flex-column flex-md-row" id="about">
         <div class="col-md-6 mx-auto px-3">
-          <h2 style="text-center">About MathFest</h2>
+          <h2 class="text-center">About MathFest</h2>
           <br>
           <p class="calendar">28<em>March</em></p>
           <p><!-- Insert About text here --></p>
         </div>
         <div class="col-md-6 mx-auto px-3" id="register">
-          <h2 style="text-center">Register</h2>
-          <form id="register-form">
+          <h2 class="text-center">Register</h2>
+          <form method="post" id="register-form">
             <div class="form-group">
               <label for="nameFirst">First Name</label>
               <input class="form-control" name="nameFirst" type="text" placeholder="Enter first name" required>
@@ -197,7 +201,7 @@
                 28</label>
             </div>
             <br>
-            <button class="btn btn-success" name="action" type="submit" value="submit"
+            <button class="btn btn-success" type="submit" value="submit" onclick="sendEmail()"
               id="submit-form">Register</button>
           </form>
         </div>
@@ -285,7 +289,6 @@
 
   <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
-  <script src="js/timer.js"></script>
   <script src="js/calendar.js"></script>
 
   <!-- AJAX for exporting HTML form data to Google Sheets -->
