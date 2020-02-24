@@ -12,4 +12,5 @@ $('#submit-form').on('click', function (e) {
   }).done(
     alert("Successfully registered!")
   );
+  $(this).attr('disabled', true);
 })
